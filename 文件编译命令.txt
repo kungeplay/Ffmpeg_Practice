@@ -1,0 +1,12 @@
+tutorial01.c:
+gcc tutorial01.c -o ./tutorial01 -I /home/Jiakun/ffmpeg_build/include/  -lavutil -lavformat -lavcodec -lswscale  -L /home/Jiakun/ffmpeg_build/lib
+tutorial02.c:
+gcc ./tutorial02.c -o ./tutorial02 -lavutil -lavformat -lavcodec -lswscale  -lz -lm `sdl-config --cflags --libs` -I /home/Jiakun/ffmpeg_build/include/ -L /home/Jiakun/ffmpeg_build/lib/ -I /usr/include/SDL/
+tutorial03-1.c
+gcc ./tutorial03-1.c -o ./tutorial03-1 -lavutil -lavformat -lavcodec -lswscale  -lz -lm `sdl-config --cflags --libs` -I /home/Jiakun/ffmpeg_build/include/ -L /home/Jiakun/ffmpeg_build/lib/ -I /usr/include/SDL/
+tutorial07.c
+gcc ./tutorial07.c -o ./tutorial07 -lavutil -lavformat -lavcodec -lswscale  -lz -lm `sdl-config --cflags --libs` -I /home/Jiakun/ffmpeg_build/include/ -L /home/Jiakun/ffmpeg_build/lib/ -I /usr/include/SDL/
+CustomPlayer.cpp:
+
+g++ ./CustomPlayer.cpp -o ./CustomPlayer -lavutil -lavformat -lavcodec -lswscale  -lswresample -lSDL_ttf  -lz -lm `sdl-config --cflags --libs` -I /home/Jiakun/ffmpeg_build/include/ -L /home/Jiakun/ffmpeg_build/lib/ -I /usr/include/SDL/  (多了个-lswresample和-lSDL_ttf )
+
